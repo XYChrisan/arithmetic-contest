@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">算术竞赛</string>
+    <string name="welcome_welcomeInfo">欢迎你，挑战者！请告诉我你的名字。</string>
+    <string name="welcome_inputName_hint">名字</string>
+    <string name="welcome_btn_startChallenge">开始挑战！</string>
+    <string name="welcome_des_welcomeImg">欢迎界面图片</string>
+    <string name="welcome_error_msg_invalid_user_name">名字不规范，请重新输入。</string>
+    <string name="main_welcome">欢迎，&#160;</string>
+    <string name="main_welcome_back">欢迎回来，&#160;</string>
+    <string name="main_image">主页图片</string>
+    <string name="main_equal">=</string>
+    <string name="main_btn_check">检查</string>
+    <string name="main_btn_next">下一题</string>
+    <string name="main_right_info">恭喜回答正确！奖励一颗星星！🌟</string>
+    <string name="main_wrong_info_1">回答错误！答案是&#160;</string>
+    <string name="main_wrong_info_2">。再接再厉！</string>
+    <string name="game_record_greet_1">你好哇，&#160;</string>
+    <string name="game_record_greet_2">！</string>
+    <string name="game_record_help">这是你的游戏记录！</string>
+    <string name="game_record_dialog_title">你的记录</string>
+    <string name="game_record_dialog_right">正确数：&#160;</string>
+    <string name="game_record_dialog_wrong">错误数：&#160;</string>
+    <string name="game_record_dialog_accuracy">准确率：&#160;</string>
+</resources>

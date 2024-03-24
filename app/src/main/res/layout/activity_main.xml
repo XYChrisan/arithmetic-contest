@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txv_welcome_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_main"
+        app:layout_constraintVertical_bias="0.083" />
+
+    <ImageView
+        android:id="@+id/img_main"
+        android:layout_width="412dp"
+        android:layout_height="172dp"
+        android:contentDescription="@string/main_image"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/maths"
+        tools:ignore="VisualLintBounds" />
+
+    <TextView
+        android:id="@+id/txv_num1"
+        android:layout_width="44dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="108dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_main" />
+
+    <TextView
+        android:id="@+id/txv_operator"
+        android:layout_width="44dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="12dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="40sp"
+        app:layout_constraintStart_toEndOf="@+id/txv_num1"
+        app:layout_constraintTop_toTopOf="@+id/txv_num1" />
+
+    <TextView
+        android:id="@+id/txv_num2"
+        android:layout_width="44dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="12dp"
+        android:text=""
+        android:gravity="center"
+        android:textSize="40sp"
+        app:layout_constraintStart_toEndOf="@+id/txv_operator"
+        app:layout_constraintTop_toTopOf="@+id/txv_operator" />
+
+    <TextView
+        android:id="@+id/txv_equal"
+        android:layout_width="44dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="12dp"
+        android:gravity="center"
+        android:text="@string/main_equal"
+        android:textSize="40sp"
+        app:layout_constraintStart_toEndOf="@+id/txv_num2"
+        app:layout_constraintTop_toTopOf="@+id/txv_num2"
+        tools:ignore="TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/edt_result"
+        android:layout_width="126dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="12dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned"
+        android:textSize="30sp"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@+id/txv_equal"
+        app:layout_constraintTop_toTopOf="@+id/txv_equal"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btn_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="96dp"
+        android:text="@string/main_btn_check"
+        app:layout_constraintEnd_toEndOf="@+id/edt_result"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txv_num1"
+        app:layout_constraintTop_toBottomOf="@+id/txv_num1" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="@string/main_btn_next"
+        app:layout_constraintEnd_toEndOf="@+id/edt_result"
+        app:layout_constraintHorizontal_bias="0.632"
+        app:layout_constraintStart_toEndOf="@+id/btn_check"
+        app:layout_constraintTop_toBottomOf="@+id/txv_num1" />
+
+    <TextView
+        android:id="@+id/txv_info"
+        android:layout_width="272dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/edt_result"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/txv_num1"
+        app:layout_constraintTop_toBottomOf="@+id/txv_num1" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_game_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="@+id/edt_result"
+        app:layout_constraintTop_toBottomOf="@+id/btn_next"
+        app:srcCompat="@android:drawable/ic_menu_recent_history"
+        tools:ignore="ContentDescription,KeyboardInaccessibleWidget,SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

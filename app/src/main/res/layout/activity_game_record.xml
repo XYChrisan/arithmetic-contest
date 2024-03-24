@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameRecordActivity">
+
+    <TextView
+        android:id="@+id/txv_greet"
+        android:layout_width="341dp"
+        android:layout_height="104dp"
+        android:text=""
+        android:textSize="40sp"
+        android:gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.079" />
+
+    <TextView
+        android:id="@+id/txv_help"
+        android:layout_width="341dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/game_record_help"
+        app:layout_constraintStart_toStartOf="@+id/txv_greet"
+        app:layout_constraintTop_toBottomOf="@+id/txv_greet" />
+
+    <ListView
+        android:id="@+id/lv_record"
+        android:layout_width="368dp"
+        android:layout_height="440dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txv_help" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

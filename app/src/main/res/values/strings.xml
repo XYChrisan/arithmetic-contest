@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Arithmetic Contest</string>
+    <string name="welcome_welcomeInfo">Welcome, challenger! Please tell me your name.</string>
+    <string name="welcome_inputName_hint">Name</string>
+    <string name="welcome_btn_startChallenge">Start Challenge!</string>
+    <string name="welcome_des_welcomeImg">Welcome Image</string>
+    <string name="welcome_error_msg_invalid_user_name">Invalid user name, please check your input.</string>
+    <string name="main_welcome">Welcome,&#160;</string>
+    <string name="main_welcome_back">Welcome back,&#160;</string>
+    <string name="main_image">Main Image</string>
+    <string name="main_equal">=</string>
+    <string name="main_btn_check">Check</string>
+    <string name="main_btn_next">Next</string>
+    <string name="main_right_info">Congratulation! Right Answer! Reward you with a star! 🌟</string>
+    <string name="main_wrong_info_1">Wrong answer! The key is&#160;</string>
+    <string name="main_wrong_info_2">. Better luck next time!</string>
+    <string name="game_record_greet_1">Hi,&#160;</string>
+    <string name="game_record_greet_2">!</string>
+    <string name="game_record_help">Here is your game record!</string>
+    <string name="game_record_dialog_title">Your record</string>
+    <string name="game_record_dialog_right">Right Answer:&#160;</string>
+    <string name="game_record_dialog_wrong">Wrong Answer:&#160;</string>
+    <string name="game_record_dialog_accuracy">Accuracy:&#160;</string>
+</resources>

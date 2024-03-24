@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity">
+
+    <TextView
+        android:id="@+id/txv_welcome_info"
+        android:layout_width="320dp"
+        android:layout_height="66dp"
+        android:gravity="bottom"
+        android:text="@string/welcome_welcomeInfo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39"
+        tools:ignore="TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="329dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/welcome_inputName_hint"
+        android:inputType="text"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/txv_welcome_info"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="@+id/txv_welcome_info"
+        app:layout_constraintTop_toBottomOf="@+id/txv_welcome_info"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:id="@+id/btn_start_challenge"
+        android:layout_width="177dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/welcome_btn_startChallenge"
+        app:layout_constraintEnd_toEndOf="@+id/edt_name"
+        app:layout_constraintTop_toBottomOf="@+id/edt_name" />
+
+    <ImageView
+        android:id="@+id/img_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/welcome_des_welcomeImg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.084"
+        app:srcCompat="@drawable/bonbon_child_at_math_lesson_with_calculator_and_apple_1" />
+
+    <TextView
+        android:id="@+id/txv_error_msg"
+        android:layout_width="127dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        android:text=""
+        android:textColor="#DD2C00"
+        app:layout_constraintStart_toStartOf="@+id/txv_welcome_info"
+        app:layout_constraintTop_toBottomOf="@+id/edt_name"
+        tools:ignore="TextSizeCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>
